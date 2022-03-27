@@ -24,6 +24,7 @@ nav > h1 {
     margin: 0rem;
     padding: 2rem;
     margin-right: 5rem;
+    font-size: 1.5rem;
 }
 
 nav > ul {
@@ -31,6 +32,7 @@ nav > ul {
     align-items: center;
     list-style: none;
     gap: 5rem;
+    font-size: 1.125rem;
 }
 
 
@@ -71,6 +73,7 @@ nav > ul {
     color: white;
     border: none;
     border-radius: 1rem;
+    font-weight: 700;
 }
 
 .item-container > p {
@@ -85,4 +88,102 @@ nav > ul {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.checkout-cart {
+    position: fixed;
+    border: 1px solid black;
+    /* background-color: black; */
+    color: black;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 2rem;
+    
+    /* transform: translateX(100%); */
+}
+
+.checkout-cart > h3 {
+    align-self: center;
+}
+
+.checkout-cart > button {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 700;
+}
+
+.checkout-cart > button:hover {
+    background-color: aqua;
+}
+
+.cart-icon {
+    position: relative;
+    top: 0;
+    background-color: #cccccc;
+    border-radius: 50%;
+    padding: 0.9rem;
+    font-size: 1.124rem;
+}
+
+.item-count {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border-radius: 50%;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    /* opacity: 0; */
+}
+    
+ul > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.checkout-cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-cart-item-image {
+    width: 90px;
+}
+
+.checkout-selection-tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkout-selection-tool > input {
+    width: 50px;
+    padding: 5px;
+}
+
+.checkout-selection-tool > button {
+    padding: 5px 12px;
+    border-radius: 2rem;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
 }
