@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function CartItem(props) {
 
+    console.log(props.cartItem)
+
     let cartItemsEle = props.cartItem != undefined ? props.cartItem.map(item => {
                                                                     console.log(item);
                                                         <div className='checkout-cart-item'>

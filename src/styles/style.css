@@ -107,7 +107,7 @@ nav > ul {
     align-items: stretch;
     gap: 1rem;
     padding: 2rem;
-    opacity: 0;
+    /* opacity: 0; */
     /* transform: translateX(100%); */
 }
 

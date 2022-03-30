@@ -45,9 +45,9 @@ export default function Product(props) {
             <Navbar 
                 cartCount={cartCount}
             />
-            <ShoppingCart 
+            {/* <ShoppingCart 
                 cartItem={cartItems}
-            />
+            /> */}
             {productEle}
         </div>
     )
