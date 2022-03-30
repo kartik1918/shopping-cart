@@ -9,35 +9,13 @@ function App() {
 
   const [productsData, setProductsData] = React.useState([]);
 
-  const [cartItems, setCartItems] = React.useState([])
-
-  const [cartCount, setCartCount] = React.useState(0)
-
-  const [shopCart, setShopCart] = React.useState([])
-    // React.useEffect(() => {
-        
-    // }, [])
-
-        
-    function addToCart(item) {
-        setCartItems(prevCartItems => [...prevCartItems, {
-            id: item.id,
-            image: item.image,
-            title: item.title,
-            price: item.price,
-            count: cartCount
-        }])
-        setCartCount(cartCount+1)
-        setShopCart(cartItems);
-    }   
-  
-  console.log(cartItems)
-  
   async function fetchProducts() {
     let dataObj = await fetch("https://fakestoreapi.com/products/category/men's clothing");
     dataArray = await dataObj.json();
     setProductsData(dataArray);
   }
+
+  console.log(productsData)
 
   React.useEffect(() => {
     fetchProducts();
@@ -45,12 +23,12 @@ function App() {
 
   return (
     <div>
-      <Navbar 
-          cartCount={cartCount}
-      />
+      {/* <Navbar 
+          // cartCount={cartCount}
+      /> */}
       <Product 
           details={productsData}
-          handleClick={() => addToCart()}
+          // handleClick={() => addToCart()}
       />
     </div>
   );

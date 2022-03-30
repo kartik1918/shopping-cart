@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/style.css'
+import CartItem from './CartItem'
 
 export default function ShoppingCart(props) {
 
@@ -14,9 +15,14 @@ export default function ShoppingCart(props) {
     //             <h4>₹109.95</h4>
     //         </div>}
 
+    console.log(props)
+
     return (
         <div className='checkout-cart'>
             <h2>Your Shopping Cart</h2>
+            <CartItem 
+                cartItem={props.cartItem}
+            />
             <h3>Total: ₹0.00</h3>
             <button>CHECKOUT</button>
             <button>CLOSE</button>

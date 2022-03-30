@@ -5,11 +5,6 @@ import Cart from './Cart'
 
 export default function Navbar(props) {
 
-    function testConsole() {
-        console.log('Testing')
-    }
-    
-
     return (
         <div>
             <nav>
@@ -18,7 +13,7 @@ export default function Navbar(props) {
                     <li>Home</li>
                     <li>Shop</li>
                     <Cart 
-                        
+                      cartCount={props.cartCount}  
                     />
                 </ul>
             </nav>
