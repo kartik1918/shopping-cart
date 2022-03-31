@@ -21,6 +21,8 @@ function App() {
     fetchProducts();
   }, [])
 
+  // let dataObj = await fetch("https://fakestoreapi.com/products/category/men's clothing");
+
   return (
     <div>
       {/* <Navbar 

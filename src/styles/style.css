@@ -14,11 +14,14 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10rem;
+    gap: 20rem;
     /* margin-top: 0.25rem; */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
     border-bottom-left-radius: 2rem;
-    border: 1px solid red;
+    padding: 0.5rem;
+    background-color: yellowgreen;
+    width: 100vw;
+    /* border: 1px solid red; */
 }
 
 nav > h1 {
@@ -34,6 +37,7 @@ nav > ul {
     list-style: none;
     gap: 5rem;
     font-size: 1.125rem;
+    cursor: pointer;
 }
 
 
@@ -41,6 +45,37 @@ nav > ul {
     width: 50%;
     height: 50%;
 } */
+
+.aside-nav {
+    width: 250px;
+    height: 100vh;
+    border: 1px solid black;
+    /* margin-top: 40px; */
+    padding-top: 120px;
+}
+
+aside > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.main-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aside-navigation {
+    flex-basis: 1;
+}
 
 .item-container {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -83,7 +118,6 @@ nav > ul {
 }
 
 .products {
-    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,7 +161,7 @@ nav > ul {
 }
 
 .checkout-cart > button:hover {
-    background-color: aqua;
+    background-color: yellowgreen;
 }
 
 .cart-icon {
