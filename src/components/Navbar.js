@@ -3,7 +3,7 @@ import React from 'react'
 import Cart from './Cart'
 import Product from './Product'
 
-export default function Navbar(props) {
+export default function Navbar({cartCount}) {
 
     return (
         <div>
@@ -13,7 +13,7 @@ export default function Navbar(props) {
                    <li>Home</li>
                     <li>Shop</li>
                     <Cart 
-                      cartCount={props.cartCount}  
+                      cartCount={cartCount}  
                     />
                 </ul>
             </nav>
